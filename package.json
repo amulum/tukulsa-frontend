@@ -27,11 +27,6 @@
     "lint:fix": "npm run lint -- --fix",
     "validate": "npm run prettier -- --list-different && npm run lint"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "lint-staged": {
     "**/*.{js,jsx,css}": [
       "npm run format",
